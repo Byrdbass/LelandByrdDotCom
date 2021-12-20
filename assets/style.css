@@ -1,0 +1,207 @@
+* {
+font-family: 'Franklin Gothic Medium', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--darkblue);
+}
+:root {
+    /* COMPOUND PALETTE */
+    --iceblue: #00ccff;
+    --blue: #1447CC;
+    --darkblue: #3D5699;
+    --orange: #FF8040;
+    --darkorange: #CC3714;
+    /* ANALAGOUS PALETTE */
+    --green: #0DFFAA;
+    /* GRADIENTS */
+    --gradientblue: linear-gradient(to right, var(--iceblue), var(--darkblue));
+    --revgradientblue: linear-gradient(to left, var(--iceblue), var(--darkblue));
+    --centergradientblue: linear-gradient(to right, var(--darkblue), var(--iceblue), var(--iceblue), var(--darkblue));
+    --gradientorange: linear-gradient(180deg, var(--orange), var(--darkorange));
+    --gradientblueorange: linear-gradient(to right, var(--darkorange), var(--darkblue))
+}
+.banner {
+    /* jumbotron style banner behind header*/
+    width: 100%;
+    height: 200px;
+    padding: 75px 0px;
+    background: url("../images/caprock_canyon_panorama2.jpeg");
+    background-size: 1900px 350px;
+    background-color: var(--darkblue);
+    margin-bottom: 100px;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 300%;
+    font-style: bold;
+    text-align: center;
+    padding: 50px 50px;
+    border: 9px ridge var(--iceblue);
+    border-radius: 10px;
+    margin: 0px 200px 75px 200px;
+    background: var(--gradientorange);
+}
+/* Navbar has spacing around it, and does not cover up banner image */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: flex-basis 500ms linear;
+    font-size: 125%;
+    margin-bottom: 100px;
+}
+
+nav .navbar{
+    width: 20%;
+    text-align: center;
+    padding: 8px 5px;
+    border: 3px solid var(--orange);
+    background: var(--gradientblue);
+    margin-top: 50px;
+}
+/* different color gradient for 3rd link in nav bar */
+nav .navcenter {
+    width: 20%;
+    text-align: center;
+    padding: 8px 5px;
+    border: 3px solid var(--orange);
+    background: var(--centergradientblue);
+    margin-top: 50px;
+}
+/* different color gradient for 4th and 5th link in nav bar */
+nav .navright {
+    width: 20%;
+    text-align: center;
+    padding: 8px 5px;
+    border: 3px solid var(--orange);
+    background: var(--revgradientblue);
+    margin-top: 50px;
+}
+/* color style of hover from analagous pallete
+TODO: add other colors to analagous pallete and redo */
+.navbar:hover, .navcenter:hover, .navright:hover {
+    font-style: italic;
+    color: var(--green);
+    background: var(--gradientblueorange);
+    border: 4px dashed var(--iceblue);
+}
+/* TODO: improve the way the box gets bigger when clicked - make it smaller not bigger */
+.navbar:active, .navcenter:active, .navright:active {
+    font-size: 90%;
+    font-style: normal;
+    font-style: bold;
+    margin: 5px 8px;
+    border: 8px double var(--darkblue);
+    background: var(--gradientorange);
+}
+main {
+    display:flex;
+    flex-wrap: wrap;
+    transition: flex-basis 500ms linear;
+    flex-direction: row;
+    justify-content: center;
+}
+.cardlink:hover {
+    font-style: italic;
+    color: var(--green);
+    background: var(--gradientblueorange);
+    border: 4px dashed var(--iceblue);
+}
+
+h2 {
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px 10px;
+    border: groove 10px var(--iceblue);
+    margin: 10px 20px 25px 20px;
+}
+.card {
+    flex-wrap: wrap
+    flex-direction: row;
+    /* figure out what this does to the nav bar as well as main */
+    transition: flex-basis 500ms linear;
+    padding: 5px 10px;
+    border: 10px dotted var(--orange);
+    margin: 20px 100px;
+}
+img {
+    
+}
+h3 {
+    font-size: 150%;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.contact_card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 50px;
+
+}
+
+label { 
+    flex-direction: column;
+}
+li {
+    list-style-type: none;
+    /* display: flex;
+    flex-direction: row; */
+}
+/* a:focus {
+    font-size: 110%;
+} */
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 20px 30px;
+    }
+    nav, nav a{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    main, h2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    nav a, .navcenter, .navright {
+        width: 40%;
+        padding: 10px 10px;
+        background: var(--centergradientblue);
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        padding: 30px 0px;
+   
+    }
+    nav, .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 100px;
+        margin-bottom: 0px;
+    }
+    main {
+        padding: 140px;
+    }
+
+    }
+    .navbar, .navcenter, .navright{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        padding: 15px 15px;
+        margin: 0px 15px;
+    }
+    
+}
