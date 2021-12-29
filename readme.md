@@ -10,6 +10,10 @@ At first, I have been working with my personal website and created a page called
 Since I am planning on using this homework assingment as a tool within my own website, I have realized I am not taking into perspective the immediate goal of submitting the required work.  I plan to come back to these step in the wordpress site, but will press on to get these files deployed to gitHub pages in the mean time.
 ## Back to the Task at Hand
 After spending quite a while on learning how to get the portfolio to flex properly and pick apart how many gradients I can squeeze in - I realized I needed to get the site ready for submission, and come back to it with finer details later.  I got the "1st Homework" to successfully link to a new tab, and have it to the photo within the navigation bar.  I manipulated my recent photo and decided to float it on the right side of the screen.  After consulting with my sister, who is an interior designer, I was told to minimize the color contrasts in previous commits and focus on a more simple layout.  I was also advised to keep the about me section to just two sentences.  
+## Improvements made after HW submission
+-changed the orange colors to more neutral grays
+-changed the gradients to more neutral grays
+
 ## Later improvements coming!
 ![screenshot of the portfolio](images/ScreenshotPortfolio1221.png)
 [Portfolio Link](https://byrdbass.github.io/LelandByrdDotCom/)

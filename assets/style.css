@@ -1,10 +1,24 @@
 * {
 font-family: 'Franklin Gothic Medium', Tahoma, Geneva, Verdana, sans-serif;
-background-color: var(--gray);
+background-color: var(--beauBlue);
 }
 :root {
-    /* COMPOUND PALETTE */
+    /* nuetrals */
     --gray: rgb(179, 180, 182); 
+    --beauBlue: #BCD1E0;
+    --Iris: #5A86A6;
+    --lawnGray: #7C8A94;
+    /* MONOCHROMATIC PALETTE */
+    --blueLapis: #266E80;
+    --persianBlue: #00A3CC;
+    --feldgrauBlue: #4DDBFF;
+    --PakistanGreen: #006680;
+
+    /* SHADES PALETTE */
+    --darkMidnightBlue: #003340;
+    --BondiBlue: #0099BF;
+    --cyan: #00B8E6;
+    /* COMPOUND PALETTE */
     --iceblue: #00CCFF;
     --blue: #1447CC;
     --darkblue: #3D5699;
@@ -15,21 +29,23 @@ background-color: var(--gray);
     /* TRIAD PALETTE */
     --yellow: #FFEC19;
     /* GRADIENTS */
-    --gradientblue: linear-gradient(to right, var(--iceblue), var(--darkblue));
-    --revgradientblue: linear-gradient(to left, var(--iceblue), var(--darkblue));
-    --centergradientblue: linear-gradient(to right, var(--darkblue), var(--iceblue), var(--iceblue), var(--darkblue));
-    --gradientorange: linear-gradient(180deg, var(--orange), var(--darkorange));
+
+    /* CHANGE THE VARIABLE NAMES FROM ....GRADEIENT BLUES TO GRADIENT BLUEGRAY */
+    --gradientblue: linear-gradient(to right, var(--beauBlue), var(--lawnGray));
+    --revgradientblue: linear-gradient(to left, var(--beauBlue), var(--lawnGray));
+    --centergradientblue: linear-gradient(to right, var(--lawnGray), var(--beauBlue), var(--lawnGray), var(--beauBlue));
+    --gradientgray: linear-gradient(45deg, var(--lawnGray), var(--Iris));
     --gradientblueorange: linear-gradient(to right, var(--darkorange), var(--darkblue))
 }
 .banner {
     /* jumbotron style banner behind header*/
     width: 100%;
-    height: 200px;
+    height: 10em;
     padding: 75px 0px;
     background: url("../images/Scoggins_highSchool_visit1_panorama_cropped1.jpeg");
     background-size: 1900px 350px;
     background-color: var(--darkblue);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 header {
     display: flex;
@@ -38,11 +54,11 @@ header {
     font-size: 300%;
     font-style: bold;
     text-align: center;
-    padding: 50px 50px;
+    padding: 50px 50px 50px 50px;
     border: 9px ridge var(--iceblue);
     border-radius: 10px;
-    margin: 0px 200px 75px 200px;
-    background: var(--gradientorange);
+    margin: 25px 200px 40px 200px;
+    background: var(--gradientgray);
 }
 /* Navbar has spacing around it, and does not cover up banner image */
 nav {
@@ -53,18 +69,18 @@ nav {
     text-transform: uppercase;
 }
 .navbar, .navcenter, .navright{
-    /* flex-wrap: wrap; */
+    display: flex;
     justify-content: center;
     width: 90%;
     padding: 15px 15px;
     margin: 25px 15px;
 }
 
-nav .navbar{
+.navbar{
     text-align: center;
     align-items: center;
     padding: 8px 5px;
-    border: 3px solid var(--orange);
+    border: 3px solid var(--blueLapis);
     background: var(--gradientblue);
     /* margin-top: 50px; */
 }
@@ -73,7 +89,7 @@ nav .navcenter {
     text-align: center;
     align-items: center;
     padding: 8px 5px;
-    border: 3px solid var(--orange);
+    border: 3px solid var(--blueLapis);
     background: var(--centergradientblue);
     /* margin-top: 50px; */
 }
@@ -83,7 +99,7 @@ nav .navright {
     text-align: center;
     align-items: center;
     padding: 8px 5px;
-    border: 3px solid var(--orange);
+    border: 3px solid var(--blueLapis);
     background: var(--revgradientblue);
     /* margin-top: 50px; */
 }
@@ -100,18 +116,23 @@ TODO: add other colors to analagous pallete and redo */
     font-style: normal;
     font-style: bold;
     border: 8px double var(--darkblue);
-    background: var(--gradientorange);
+    background: var(--gradientgray);
 }
+/* ADD NAVBAR:ACTIVE AND LBLINK:ACTIVE TO THIS */
+
 /* TODO: FORMAT THE ABOUT ME SECTION WITH H3 and with MEDIA QUERY */
 article {
     display: flex;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 .aboutme {
-    border: 9px inset var(--orange);
+    border: 9px inset var(--blueLapis);
     background: var(--centergradientblue);
-    margin-left: 25px; 
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 75px;
     /* flex-direction: row; */
     /* flex-wrap: wrap; */
 }
@@ -122,7 +143,7 @@ article {
     width: 20%;
     height: 30%;
     float: right;
-    border: 9px inset var(--orange);
+    border: 9px inset var(--blueLapis);
     margin: 20px 3px;
 }
 .aboutme h3, .aboutme p {
@@ -170,7 +191,7 @@ main {
 .cardlink {
     /* transition: flex-basis 500ms linear; */
     padding: 5px 7px;
-    border: 10px dotted var(--orange);
+    border: 10px dotted var(--blueLapis);
     margin: 20px 100px;
 }
 .cardlink:hover{
@@ -197,6 +218,12 @@ h3 {
     text-align: center;
 }
 
+.contact_form {
+    display:flex;
+    flex-wrap: wrap;
+    transition: flex-basis 500ms linear;
+    flex-direction: row;
+}
 ul {
     display: flex;
     flex-direction: row;
@@ -207,7 +234,7 @@ ul {
     flex-direction: column;
     text-align: center;
     font-size: 150%;
-    margin: 20px 50px;
+    margin: 10px 50px;
 
 }
 h4 {
@@ -225,25 +252,43 @@ input {
     background: var(--yellow)
 }
 .msginput{
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    height: 200px;
 }
 li {
     list-style-type: none;
-    /* display: flex;
-    flex-direction: row; */
-}
+    display: flex;
+    flex-direction: row;
+} 
 
-
-@media screen and (max-width: 992px) {
-    header {
-        padding: 20px 30px;
+@media screen and (max-width: 1124px) {
+    .banner {
+        height: 11em;
+        margin-bottom: 0px;
     }
-    nav, .navbar, .navcenter, .navright{
+    header {
+        padding: 20px 40px 20px 40px;
+    }
+    .aboutme {
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    header {
+        align-items: center;
+        padding: 2px 3px; 
+        margin-bottom: 75px;
+    } 
+    nav {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+    .navbar, .navcenter, .navright {
+        margin: 15px 15px;
+        width: 100%;
+        padding: 10px 10px;
     }
     main, h2 {
         display: flex;
@@ -252,7 +297,7 @@ li {
     }
     nav a, .navcenter, .navright {
         /* width: 40%; */
-        padding: 10px 10px;
+        
         /* margin-bottom: 200px; */
         background: var(--centergradientblue);
     }
@@ -267,10 +312,13 @@ li {
         justify-content: center;
         display: block;
     }
-}
+} 
 /* NEED TO CENTER THE IMAGES WITHIN EACH CARD */
 /* maybe make another ID or class */
 @media screen and (max-width: 768px) {
+    .banner {
+        margin-bottom: 10px;
+    }
     header {
         padding: 30px 0px;
    
