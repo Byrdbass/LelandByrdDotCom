@@ -1,0 +1,67 @@
+:root {
+    /* nuetrals */
+    --gray: rgb(179, 180, 182); 
+    --beauBlue: #BCD1E0;
+    --Iris: #5A86A6;
+    --lawnGray: #7C8A94;
+    /* MONOCHROMATIC PALETTE */
+    --blueLapis: #266E80;
+    --persianBlue: #00A3CC;
+    --feldgrauBlue: #4DDBFF;
+    --PakistanGreen: #006680;
+
+    /* SHADES PALETTE */
+    --darkMidnightBlue: #003340;
+    --BondiBlue: #0099BF;
+    --cyan: #00B8E6;
+    /* COMPOUND PALETTE */
+    --iceblue: #00CCFF;
+    --blue: #1447CC;
+    --darkblue: #3D5699;
+    --orange: #FF8040;
+    --darkorange: #CC3714;
+    /* ANALAGOUS PALETTE */
+    --green: #0DFFAA;
+    /* TRIAD PALETTE */
+    --yellow: #FFEC19;
+    /* GRADIENTS */
+
+    /* CHANGE THE VARIABLE NAMES FROM ....GRADEIENT BLUES TO GRADIENT BLUEGRAY */
+    --gradientblue: linear-gradient(to right, var(--beauBlue), var(--lawnGray));
+    --revgradientblue: linear-gradient(to left, var(--beauBlue), var(--lawnGray));
+    --centergradientblue: linear-gradient(to right, var(--lawnGray), var(--beauBlue), var(--lawnGray), var(--beauBlue));
+    --gradientgray: linear-gradient(45deg, var(--lawnGray), var(--Iris));
+    --gradientblueorange: linear-gradient(to right, var(--darkorange), var(--darkblue))
+}
+
+/* hover and active custom coloring */
+.menu-item:hover{
+    font-style: italic;
+    color: var(--darkorange);
+    background: var(--gradientblueorange);
+    border: 2px dashed var(--iceblue);
+}
+.menu-item:active{
+    font-size: 85%;
+    font-style: normal;
+    font-style: bold;
+    border: 4px double var(--darkblue);
+    background: var(--gradientgray);
+}
+a:hover{
+    color: var(--darkorange);
+          border: 2px dashed var(--iceblue);
+}
+a:active{
+    font-size: 85%;
+    font-style: normal;
+    font-style: bold;
+    border: 4px double var(--darkblue);
+    background: var(--gradientgray);
+}
+
+
+/* hide archives, categories and created by wordpress stuff */
+.wp-block-latest-comments, .xoxo, #site-generator{
+display:none;
+}

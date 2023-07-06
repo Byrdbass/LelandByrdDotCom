@@ -129,9 +129,8 @@ body {
     /* TODO: FORMAT THE ABOUT ME SECTION WITH H3 and with MEDIA QUERY */
     .about-container {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
     .aboutme {
         border: 9px inset var(--blueLapis);
@@ -142,12 +141,11 @@ body {
         /* flex-direction: row; */
         /* flex-wrap: wrap; */
     }
-    
+
     .headshot {
         /* justify-content: flex-start; */
-        flex-wrap: wrap;
-        width: 10%;
-        height: 30%;
+        width: 120px;
+        height: 180px;
         float: right;
         border: 9px inset var(--blueLapis);
         margin: 20px 30px 20px 3px;
@@ -164,6 +162,7 @@ body {
     .projects{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .proj-card{
         width: 33%;
@@ -337,6 +336,11 @@ body {
             margin: 5px 10px;
             background: transparent;
         } */
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .projects{
             display: flex;
             flex-direction: column;

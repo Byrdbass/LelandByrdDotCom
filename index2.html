@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Portfolio</title>
+  <!-- add a reset.css file -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./images/Artboard-1-copy-17color-36.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link type="text/css" rel="stylesheet" href="./assets/css/materialize.css" media="screen,projection" />
+</head>
+
+<body>
+  <section class="banner" alt="A panaroma of a string orchestra">
+    <header class="container">Leland Byrd's Coding Portfolio</header>
+  </section>
+
+  <div class="divider"></div>
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper customColorNav">
+      <a href="index.html" class="brand-logo"><img src="./images/Artboard-1-copy-17color-36.png"
+          class="customColorNav logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger customColorNav">
+        <i class="material-icons customColorNav">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="customColorNav" href="https://github.com/Byrdbass" target="_blank">Github</a></li>
+        <li><a class="customColorNav" href="https://www.linkedin.com/in/leland-byrd/" target="_blank">LinkedIn</a></li>
+        <li><a class="customColorNav" href="https://linktr.ee/byrdbass" target="_blank">Linktr.ee</a></li>
+      </ul>
+    </div>
+    <div class="nav-content customColorNav">
+      <ul class="tabs tabs-transparent">
+        <li class="tab customColorNav"><a href="./assets/Poke-Weather/index.html" target="_blank">PokeWeather</a></li>
+        <!-- <li class="tab"><a class="active" href="#test2">Repair Revolution</a></li> -->
+        <li class="tab customColorNav"><a href="https://byrdbass.github.io/passwordGenerator/" target="_blank">Password
+            Generator</a></li>
+        <!-- <li class="tab customColorNav"><a class="resumeBtn" target="_blank">Resume</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="https://github.com/Byrdbass" target="_blank" >Github</a></li>
+    <li><a href="https://www.linkedin.com/in/leland-byrd/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://linktr.ee/byrdbass" target="_blank" >Linktr.ee</a></li>
+  </ul>
+
+  <!-- short article about me  -->
+  <div class="divider"></div>
+  <div>
+    <!-- Headshot photo -->
+    <div id="MQheadshot" class="">
+      <img src="images/AISD_headshot_cropped.jpg" class="headshot circle s12 m5"
+        alt="headshot of Leland Byrd smiling with glasses on">
+    </div>
+    <div class="aboutme container">
+      <h3>About me</h3>
+      <p>Full stack web developer and multimedia programmer capitalizing on a music education background to expand
+        the versatility and intuitive nature of the web. Please email me at 
+        <a class="LBlink" href="mailto:byrdbass@gmail.com">byrdbass@gmail.com</a> 
+        if you would like to contact me.
+        If you want to know more about my personal interests click
+        <a class="LBlink" href="http://www.nuggatron.com" alt="A link to my personal website" target="_blank"> Here!</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <!-- SECTION -->
+
+  <div class="row">
+
+    <!-- POKE WEATHER -->
+    <div class="row">
+      <div class="col s12 m5 l4">
+        <a href="assets\Poke-Weather\index.html" alt="Poke-Weather project link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/PokeWeather.gif" alt="screenshot of poke-weather app">
+              <span class="card-title transparent">Poke Weather</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>Solves the issue of using a boring Weather App and reminds you of some great Pokemon! Made using two Server-side APIs, Materialize, Javascript, express.js, CSS, and HTML</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/Poke-Weather" target="_blank" class="blue-text">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+    <!-- REPAIR REVOLUTION -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://repairrevolution.herokuapp.com/" alt="Repair-Revolution Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="images/Repair Revolution.gif" alt="screenshot of Repair-Revolution app">
+              <span class="card-title transparent">Repair Revolution</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A blog to advocate for the Right to repair!  Create an account and share with others on how to fix your electronics so you don't have to buy new ones!  Save the planet!  
+            Made with handlebars.js, materialize, node.js, MySQL, express.js, JavaScript, and CSS.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/mrlane51/RepairRevolution" target="_blank">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DECKED OUT -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://decked--out.herokuapp.com" alt="Decked-Out Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="images/Decked-Out.gif" alt="screenshot of Decked-Out app">
+              <span class="card-title transparent">Decked-Out</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>An app to help you study!  Create an account and study flashcards of your favorite subject, or an upcoming quiz.
+            Made with React.js, JSON web-token, bcrypt, Apollo-Server, materialize, node.js, GraphQL, express.js, JavaScript, and CSS.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/clabel95/Decked-Out" target="_blank">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Werd to the Words -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://werd-to-the-words.herokuapp.com/" alt="werd to the words Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="images/J.A.T.E.gif" alt="screenshot of Decked-Out app">
+              <span class="card-title transparent">Werd to the Words</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A progressive web application that funcitons as a basic text editor.  This will save you text even if you loose internet connection!  
+            Able to install locally on your machine and able to write in code like an IDE.
+            Made with Webpack.js, a service worker via Workbox, babel for older versions of JS, node.js, JavaScript, and CSS.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/Werd-to-the-Words" target="_blank">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media API -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://github.com/Byrdbass/ByrdsBuddies" alt="link to Social-media API repo" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="images/byrdsbuddies-gif.gif" alt="screenshot of byrdsbuddies api">
+              <span class="card-title transparent">ByrdsBuddies</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A backend application that helps Social Media apps keep track of users, their thoughts, and necessary login information.  
+            Made with Mongoose, Express.js, validator.js, node.js, and console.table package</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/ByrdsBuddies" target="_blank">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BLOG BONANZA -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://blog-bonanza.herokuapp.com" alt="Blog-Bonanza Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/Blog-Bonanza.gif" alt="screenshot of Blog-Bonanza app">
+              <span class="card-title transparent">Blog Bonanza</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A full stack tech blog and RESTful API!  Helps you network with other people on the site and provide feedback for their posts. Made using Model-View-Controller architecture, handlebars.js, MySQL, Session/cookies, Materialize, Javascript, express.js, and Node.js</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/Blog-Bonanza" target="_blank">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOTE TAKER -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://write-some-notes.herokuapp.com/" alt="Note-Taker Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/Note Taker.gif" alt="screenshot of Note Taker app">
+              <span class="card-title transparent blue-grey-text">Write Some Notes</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A simple note taking app following Object Oriented Programming.  Helps you stay organized with To-do lists! Made with express.js and Javascript.</p>
+          <!-- DELETE FUNCTION IS NOT WORKING -->
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/note-taker" target="_blank" class="blue-text">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAM PROFILE GEN -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://github.com/Byrdbass/Team-Profile-Generator" alt="Team Profile Generator Repo link"
+          target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/team-profile-generator-gif.gif" alt="screenshot of Team profile Generator app">
+              <span class="card-title transparent blue-grey-text lighten-1">Team Profile Generator</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A node app to create an Employee Database.  Helps you create a webpage for your team with contact information easily displayed.
+            Implemented Object Oriented programming, made using node.js, jest for testing, and Javascript</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/Team-Profile-Generator" target="_blank" class="blue-text">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MARKDOWN MUHSHEEEN -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://github.com/Byrdbass/MarkDown-MUHsheeen" alt="Readme Generator Repo link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/README-generator-gif.gif" alt="screenshot of a readme generator">
+              <span class="card-title transparent">MarkDown MUHsheeen</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A markdown file generator for easy GitHub deployment.  Create readme's super fast with this app! Made using Node.js, inquirer.js, and Javascript</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/MarkDown-MUHsheeen" target="_blank" class="blue-text">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- weather dashboard -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://byrdbass.github.io/weather-dashboard/" alt="Repair-Revolution Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/Weather-Dashboard-ScreenShot.gif" alt="screenshot of Weather app">
+              <span class="card-title transparent black-text">Weather Dashboard</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A 5 day weather forecast based off location.  Helps you predict the weather any where in the world! Made using Javascript and a Server-side API.</p>
+        </div>
+        <div class="card-action">
+          <a class="blue-text" href="https://github.com/Byrdbass/weather-dashboard" target="_blank">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- password Generator -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://byrdbass.github.io/passwordGenerator/" alt="password generator link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="images\Password_gen_screenshot.png" alt="screenshot of password generator app">
+              <span class="card-title transparent black-text">Password Generator</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>An app to generate a password with alert boxes.  This can Help you make up long passwords with different requirements for all your logins!  Made with JavaScript.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/passwordGenerator" target="_blank" class="blue-text">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- e-commerce back end -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://github.com/Byrdbass/E-commerce-Back-End" alt="E-commerce-Back-End link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/e-commerce-back-end-screenshot.gif" alt="screenshot of e-commerce back end app">
+              <span class="card-title transparent ">E-commerce Back End</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>Linking e-commerce databases with express.js routes.  Helps vendors link products to categories and other valuable information.
+             Made with Object Relational Mapping, using a RESTful API, express.js, MySQL, and JavaScript</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/E-commerce-Back-End" target="_blank" class="blue-text">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- buisness tracker -->
+
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://github.com/Byrdbass/bizness-trackstar" alt="Repair-Revolution Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/employee-tracker-screenshot.gif" alt="screenshot of employee tracker app">
+              <span class="card-title transparent">Bizness Trackstar</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>An employee database tracker. Creates solutions for large companies needing to keep track of employee salary, managers, etc..  Made with Node.js, MySQL, express.js, and JavaScript</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/bizness-trackstar" target="_blank" class="blue-text">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- work day scheduler -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://byrdbass.github.io/work-day-scheduler" alt="Repair-Revolution Heroku Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/Work-day-scheduler-screenGif.gif" alt="screenshot of Daily Scheduler app">
+              <span class="card-title transparent blue-grey-text">Work Day Scheduler</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>An app to create and monitor a daily work schedule.  Helps you stay organized during your work day! Created with Moment.js as a Third Party API and JavaScript</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/work-day-scheduler" target="_blank" class="blue-text">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CODE QUIZ -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://byrdbass.github.io/code-quiz/" alt="Coding Quiz Link" target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="./images/Code-Quiz-gif.gif" alt="screenshot of Code-Quiz">
+              <span class="card-title transparent blue-grey-text" class="blue-text">Code-Quiz</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>Quiz yourself on some basic javascript!  Keeps you fresh on your basic coding skills and let's you compete for high score! 
+            Made with JavaScript, using local storage and a Web API.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/code-quiz" target="_blank" class="blue-text">Link to Github Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CODE REFACTOR -->
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <a href="https://byrdbass.github.io/Horiseon_Code_refactor" alt="screenshot of the code refactor page"
+          target="_blank">
+          <div class="card cardlink">
+            <div class="card-image">
+              <img src="images/01-html-css-git-homework-demo.png" alt="screenshot of Repair-Revolution app"
+                id="coderefactor">
+              <span class="card-title transparent">Code Refactor</span>
+            </div>
+        </a>
+        <div class="card-content">
+          <p>A webpage refactored for semantic HTML</p>
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/Byrdbass/Horiseon_Code_refactor" target="_blank" class="blue-text">Link to Github
+            Repo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- END OF MAIN SECTION CLASS ROW-->
+  </div>
+
+
+  <!-- CONTACT FORM SECTION -->
+  <section class="container">
+    <footer> You may contact me at byrdbass@gmail.com</footer>
+    <div>
+      <h4>Contact Form - add your information and message</h4>
+      <form>
+        <iframe class="contact_card hide-on-med-and-down"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSdLUGsO7Ox9m8CG_qMDYiaGCC7AoRxE4aJ8Iqgo_fWoSx-R8Q/viewform?embedded=true"
+          width="640" height="955" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </form>
+      <!-- sitelock icon from 1&1 -->
+      <a href="#"
+        onclick="window.open('https://www.sitelock.com/verify.php?site=lelandbyrd.com','SiteLock','width=600,height=600,left=160,top=170');"><img
+          title="SiteLock" src="https://shield.sitelock.com/shield/lelandbyrd.com" alt="Website security"></a>
+  </section>
+  <script src="./assets/js/script.js"></script>
+  <script src="./dist/src/index.js"></script>
+  <script src="./dist/main.js"></script>
+  <script type="text/javascript" src="./assets/js/materialize.js"></script>
+</body>
+
+</html>
