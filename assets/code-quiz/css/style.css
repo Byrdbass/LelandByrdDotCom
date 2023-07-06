@@ -1,0 +1,74 @@
+:root{
+    --red: #CC3714;
+    --black: #000608;
+    --brown: #C77714;
+    --darkblue: #001380;
+    --white: white;
+    /* nuetrals */
+    --gray: rgb(179, 180, 182); 
+    --beauBlue: #BCD1E0;
+    --Iris: #5A86A6;
+    --lawnGray: #7C8A94;
+    /* MONOCHROMATIC PALETTE */
+    --blueLapis: #266E80;
+    --persianBlue: #00A3CC;
+    --feldgrauBlue: #4DDBFF;
+    --PakistanGreen: #006680;
+
+}
+.card {
+    text-align: center;
+    background-color: var(--beauBlue);
+    padding: 20px 75px 40px 75px;
+    border: 9px double var(--PakistanGreen);
+    margin: 75px 150px 20px 150px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400%;
+    color: var(--black);
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    color: var(--black);
+}
+h3, #finalScore{
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--red);
+    font-size: 250%;
+}
+p, li, #correctMessage, #wrongMessage {
+    font-size: 175%;
+    font-weight: bold;
+    line-height: 1.5;
+}
+p {
+    font-style: italic;
+}
+#question {
+    display: flex;
+}
+button {
+    border-radius: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    display: block;
+    margin: 0px 15px;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+#startButton, #submitButton {
+    display: inline;
+}
+button:hover {
+    color: var(--feldgrauBlue);
+    background-color: var(--blueLapis);
+}
+#nextButtonDiv {
+    padding: 40px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
+}
+li {
+    list-style: none;
+}

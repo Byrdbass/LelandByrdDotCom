@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery style links -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css"/> -->
+    <!-- original style link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- add the current day -->
+      <p id="Today" class="lead"></p>
+    </header>
+    <!-- MAIN PORTION OF THE PLANNER -->
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="container time-block row" id="9am">9am
+        <textarea class="eventInput description"  id='9am' type="text" placeholder="type event here"> </textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="10am">10am
+        <textarea class="eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="11am">11am
+        <textarea class="eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="12pm">12pm
+        <textarea class="eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="13pm">1pm
+        <textarea class="eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="14pm">2pm
+        <textarea class="eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="15pm">3pm
+        <textarea class="eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="16pm">4pm
+        <textarea class="container eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+      <div class="container time-block row" id="17pm">5pm
+        <textarea class="eventInput description" type="text" placeholder="type event here"></textarea>
+        <button class="col-md-1 saveBtn">save!</button>
+      </div>
+
+        
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- linking the local moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- bootstrap CDN link -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jquery UI script links -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
+<!-- linking the local js -->
+    <script src= "./assets/js/script.js"></script>
+  </body>
+</html>

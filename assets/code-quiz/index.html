@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Quiz</title>
+  <!-- <link rel="stylesheet" href="./assets/reset.css"> -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <div id="startPage" class="card"><h1>Coding Quiz!</h1>
+        <p>
+            You will get 4 choices on the following questions about JavaScript,
+            <br>You have 25 seconds to answer all 5 questions.  
+            <br>For each incorrect answer you will lose 2 seconds Good Luck!
+        </p>
+        <button id="startButton">Start Game!</button>
+    </div>
+    
+    <div id="question" class="card">
+        <div id=correctMessage></div>
+        <div id=wrongMessage></div>
+        <h2 id="heading-question"></h2>
+            <button id=choice1></button>
+            <button id=choice2></button>
+            <button id=choice3></button>
+            <button id=choice4></button>
+            <h3 id=timeLeft></h3>
+    </div>
+    <div id=scorePage class=card>
+        <h3> Your final score is</h3>
+        <h4 id="finalScore"></h4>
+        <label>Enter Initials</label>
+        <input id="userInitials" placeholder="initials here" type="text" onfocus="this.value=''">
+        <button type="button" id="submitButton">Add High Score</button>
+        <ul id=UserScore&Initials></ul>
+
+
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
